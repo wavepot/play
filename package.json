@@ -1,0 +1,13 @@
+{
+  "name": "play",
+  "version": "0.0.1",
+  "description": "wavepot play",
+  "main": "index.js",
+  "author": "stagas",
+  "license": "MIT",
+  "devDependencies": {
+    "css-modulesify": "^0.25.1",
+    "live-server": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}
