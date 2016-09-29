@@ -11,10 +11,12 @@
   </head>
   <body>
 <textarea id="code" cols=80 rows=15>
+with(studio)
 return function(t, f) {
-  return Math.sin(t * f * Math.PI * 2);
+  return pulse(t, f/2, .05) * 0.2;
 }
 </textarea>
     <script src="play.js"></script>
+    <script src="studio.js"></script>
   </body>
 </html>

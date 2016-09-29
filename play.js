@@ -57,9 +57,13 @@ code.onkeyup = e => e.stopPropagation();
 code.oninput = e => fn = compile(code.value);
 
 var notesPressed = {};
+var fn;
 
-var fn = compile(code.value);
+setTimeout(() => fn = compile(code.value), 0);
+
 var audio = new AudioContext;
+window.sampleRate = audio.sampleRate;
+
 var node = audio.createScriptProcessor(256);
 node.connect(audio.destination);
 
